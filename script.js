@@ -82,5 +82,12 @@ function drawPicture() {
   paintTria((canvas.width/45), (canvas.height/1.6), 250)
   paintTria(canvas.width-(canvas.width/45+250), (canvas.height/1.6), 250)
   paintReversedRect((canvas.width/2-(100/2.8)), (canvas.height/1.25), 100, "sienna")
+  
+  //Träd
+  c.beginPath();
+  c.fillStyle = "green";
+  c.ellipse((canvas.width/2), ((canvas.height/1.25-130)), 80, 150, 0, 0.65 * Math.PI, 2.35 * Math.PI);
+  c.fill();
+  c.stroke();
 }
 drawPicture();
